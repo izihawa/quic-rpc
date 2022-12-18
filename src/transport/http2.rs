@@ -23,7 +23,7 @@ use tokio::task::JoinHandle;
 use tracing::{error, event, Level};
 
 // add a bit of fudge factor to the max frame size
-const MAX_FRAME_SIZE: u32 = 1024 * 1024 + 1024;
+const MAX_FRAME_SIZE: u32 = 32 * 1024 * 1024 + 1024;
 
 // /// concatenate the given stream and result from the future
 // ///
